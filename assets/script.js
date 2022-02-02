@@ -23,3 +23,11 @@ function displayWeather(weather) {
     humid.textContent = weather.main.humidity;
     wind.textContent = weather.wind.speed;
 }
+
+function fiveDayForecast() {
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${input.value}&appid=fcd594fc4b7accf846134105a10b76ac&units=imperial`).then(function(response) {
+    return response.json()
+}).then(function (weather) {
+    
+})
+}
